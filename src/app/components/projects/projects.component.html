@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<!-- projects.component.html -->
+
+<!-- Projects Section -->
+<section class="projects-section" id="projects">
+    <h2 class="section-title">Our Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects" (click)="openModal(project)">
+        <img [src]="project.image" [alt]="project.title" class="project-image" />
+      </div>
+    </div>
+    
+    <!-- Modal for full-size image -->
+    <div *ngIf="isModalOpen" class="modal">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <img [src]="selectedImage" class="modal-content" />
+    </div>
+  </section>
+  

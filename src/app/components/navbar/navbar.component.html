@@ -1,1 +1,15 @@
-<p>navbar works!</p>
+<nav class="navbar">
+  <div class="navbar-logo">
+    <img src="logord.png" alt="rd" class="logo" />
+    
+  </div>
+  <ul class="navbar-links">
+    <li><a routerLink="home">Home</a></li>
+    <li><a routerLink="about">About</a></li>
+    <li><a routerLink="services">Services</a></li>
+    <li><a routerLink="projects">Projects</a></li>
+    <li><a routerLink="testimonials">Testimonials</a></li>
+    <li><a routerLink="contact">Contact</a></li>
+  </ul>
+  <div class="menu-toggle" (click)="toggleMenu()">&#9776;</div>
+</nav>
