@@ -6,7 +6,7 @@
 }
 
 .services-section .section-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 3rem;
     color: #2c3e50;
     text-align: center;
@@ -20,6 +20,7 @@
 /* Service Cards Styling */
 .services-grid {
     display: flex;
+    font-family: 'Playfair Display', serif;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
